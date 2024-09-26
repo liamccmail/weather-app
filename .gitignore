@@ -1,0 +1,8 @@
+.vs/
+bin/
+obj/
+*.user
+build/
+node_modules/
+# Rider IDE
+.idea/
