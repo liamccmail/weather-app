@@ -15,6 +15,14 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+// Enable CORS from any origin
+app.UseCors(x => x
+  .AllowAnyMethod()
+  .AllowAnyHeader()
+  .AllowCredentials()
+  .SetIsOriginAllowed(origin => true));
+
 app.UseHttpsRedirection();
 app.MapControllers();
 
