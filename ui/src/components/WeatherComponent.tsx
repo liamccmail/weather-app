@@ -1,7 +1,7 @@
 import { WeatherData } from "../models/WeatherData";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import LoadingSkeletonCard from "./SkeletonCard";
+import LoadingSkeletonCard from "./LoadingSkeletonCard";
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
@@ -35,7 +35,6 @@ export default function WeatherComponent({city}: WeatherComponentProps) {
         setWeather(data);
         clearError();
       } catch (err) {
-        console.error(err);
         initiateError();
       }
     }
