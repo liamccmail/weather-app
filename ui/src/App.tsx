@@ -1,5 +1,5 @@
 import "./App.css";
-import WeatherCard from "./components/WeatherCard";
+import WeatherComponent from "./components/WeatherComponent";
 import Search from "./components/Search";
 import { useState } from "react";
 import { motion } from "framer-motion"
@@ -29,7 +29,7 @@ function App() {
         { 
         city ? 
           <div className="items-center justify-center mb-6">
-            <WeatherCard city={city} />
+            <WeatherComponent city={city} />
           </div>
           : <div>
               <p className="text-lg text-gray-100 mt-6">Type in a city name above to retrieve local weather and astronomy data.</p> 

@@ -8,11 +8,11 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ThermostatIcon from '@mui/icons-material/Thermostat';
 import dayjs from "dayjs";
 
-interface WeatherCardProps {
+interface WeatherComponentProps {
   city: string;
 }
 
-export default function WeatherCard({city}: WeatherCardProps) {
+export default function WeatherComponent({city}: WeatherComponentProps) {
   const [weather, setWeather] = useState<WeatherData | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [isError, setIsError] = useState<boolean>(false);
