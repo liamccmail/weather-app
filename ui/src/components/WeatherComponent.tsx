@@ -49,8 +49,8 @@ export default function WeatherComponent({city}: WeatherComponentProps) {
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
         >
-          <p>Error loading city data...</p>
-          <p className="text-gray">Please try another city name.</p>
+          <p className="text-gray-100">Error loading city data...</p>
+          <p className="text-ghost-white">Please try another city name.</p>
         </motion.div>
       </div>
     );
