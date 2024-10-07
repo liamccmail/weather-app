@@ -102,11 +102,11 @@ export default function WeatherComponent({city}: WeatherComponentProps) {
                   <h2 className="text-md">Sunrise & Sunset</h2>
                   <div className="flex justify-center">
                     <p className="text-xl mt-2"><WbSunnyIcon/><ArrowDropUpIcon/></p>
-                    <p className="text-xl ml-3 mt-2">{weather?.sunrise}</p>
+                    <p className="text-xl mt-2">{weather?.sunrise}</p>
                   </div>
                   <div className="flex justify-center">
                     <p className="text-xl mt-2"><WbSunnyIcon/><ArrowDropDownIcon/></p>
-                    <p className="text-xl ml-3 mt-2">{weather?.sunset}</p>
+                    <p className="text-xl mt-2">{weather?.sunset}</p>
                   </div>
                 </motion.div>
               </div>
