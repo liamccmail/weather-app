@@ -13,17 +13,10 @@ namespace WeatherService.Api.Controllers
     private readonly HttpClient _httpClient;
 
 
-    public WeatherController(IConfiguration configuration)
+    public WeatherController(IConfiguration configuration, HttpClient? httpClient = null)
     {
       _configuration = configuration;
-      _httpClient = new HttpClient { BaseAddress = new Uri("http://api.weatherapi.com") };
-    }
-
-    // Overload constructor for testing
-    public WeatherController(IConfiguration configuration, HttpClient httpClient)
-    {
-      _configuration = configuration;
-      _httpClient = httpClient;
+      _httpClient = httpClient ?? new HttpClient { BaseAddress = new Uri("http://api.weatherapi.com") };
     }
 
     /// <summary>
