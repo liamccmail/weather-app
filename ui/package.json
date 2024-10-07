@@ -1,10 +1,19 @@
 {
-  "name": "front-end-app",
+  "name": "insurwave-location-data-ui",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@fontsource/roboto": "^5.1.0",
+    "@mui/icons-material": "^6.1.1",
+    "@mui/material": "^6.1.1",
+    "bootstrap": "^5.3.3",
     "cra-template-typescript": "^1.2.0",
+    "dayjs": "^1.11.13",
+    "framer-motion": "^11.9.0",
     "react": "^18.3.1",
+    "react-bootstrap": "^2.10.5",
     "react-dom": "^18.3.1",
     "react-scripts": "^5.0.1"
   },
@@ -33,11 +42,12 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@testing-library/jest-dom": "^6.4.5",
     "@testing-library/react": "^15.0.7",
     "@types/jest": "^29.5.12",
-    "@types/react": "^18.3.3",
+    "@types/react": "^18.3.9",
     "@types/react-dom": "^18.3.0",
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "tailwindcss": "^3.4.13"
   }
 }
