@@ -1,6 +1,6 @@
 namespace WeatherService.Api.Models
 {
-  public class Location
+  public class Weather
   {
     public required string City { get; set; }
     public required string Region { get; set; }
