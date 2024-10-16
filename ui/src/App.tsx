@@ -7,9 +7,6 @@ import { motion } from "framer-motion"
 function App() {
   const [city, setCity] = useState<string>("");
 
-  // const city = 'London';
-  // const setCity = () => {};
-
   return (
     <div className="flex items-center justify-center min-h-screen bg-cornflower-blue">
       <div className="w-full sm:w-10/12 lg:w-4/6 text-center px-4">
